@@ -1,0 +1,267 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify the fields and Errors of the Contact Page",
+        "description": "",
+        "id": "contact-page-field-validation;verify-the-fields-and-errors-of-the-contact-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12568245184,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the HomePage of the Jupiter testing site",
+            "match": {
+              "location": "ShoppingPageMethod.user_is_on_the_HomePage_of_the_Jupiter_testing_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78120679,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on the Contact Page",
+            "match": {
+              "location": "ContactPageMethod.user_click_on_the_Contact_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 342256517,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on the Submit button",
+            "match": {
+              "location": "ContactPageMethod.user_click_on_the_Submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104940948,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify error messages for each field",
+            "match": {
+              "location": "ContactPageMethod.verify_error_messages_for_each_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1043359926,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User populate mandatory fields and click on submit",
+            "match": {
+              "location": "ContactPageMethod.user_populate_mandatory_fields_and_click_on_submit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45223701671,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Validate errors are gone",
+            "match": {
+              "location": "ContactPageMethod.validate_errors_are_gone()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4498133817,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Validate successful submission message",
+            "match": {
+              "location": "ContactPageMethod.validate_successful_submission_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 913793936,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Close the browser",
+            "match": {
+              "location": "ShoppingPageMethod.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Testing"
+          }
+        ]
+      }
+    ],
+    "name": "Contact Page Field Validation",
+    "description": "",
+    "id": "contact-page-field-validation",
+    "keyword": "Feature",
+    "uri": "ContactPage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 16,
+        "name": "Verify the fields and Errors of the Contact Page",
+        "description": "",
+        "id": "shopping-page-validation;verify-the-fields-and-errors-of-the-contact-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8215337356,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on the HomePage of the Jupiter testing site",
+            "match": {
+              "location": "ShoppingPageMethod.user_is_on_the_HomePage_of_the_Jupiter_testing_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 105077395,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on the Shop Page",
+            "match": {
+              "location": "ShoppingPageMethod.user_click_on_the_Shop_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 634397780,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user selects the \"Stuffed Frog\" , \"FluffyBunny\"  and \"ValentineBear\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Stuffed Frog",
+                  "offset": 18
+                },
+                {
+                  "val": "FluffyBunny",
+                  "offset": 35
+                },
+                {
+                  "val": "ValentineBear",
+                  "offset": 54
+                }
+              ],
+              "location": "ShoppingPageMethod.user_selects_the_and(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90396070,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on the cart",
+            "match": {
+              "location": "ShoppingPageMethod.user_click_on_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 967551599,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user Enters the value quantity of 2 , 5  and 3 Each Item and verify subtotal",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 34
+                },
+                {
+                  "val": "5",
+                  "offset": 38
+                },
+                {
+                  "val": "3",
+                  "offset": 45
+                }
+              ],
+              "location": "ShoppingPageMethod.user_Enters_the_value_quantity_of_and_Each_Item_and_verify_subtotal(int,int,int)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88270276,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Verify that total is equal sum sub totals",
+            "match": {
+              "location": "ShoppingPageMethod.verify_that_total_is_equal_sum_sub_totals()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 627330918,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Close the browser",
+            "match": {
+              "location": "ShoppingPageMethod.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Testing"
+          }
+        ]
+      }
+    ],
+    "name": "Shopping Page Validation",
+    "description": "",
+    "id": "shopping-page-validation",
+    "keyword": "Feature",
+    "uri": "ShoppingPage.feature"
+  }
+]
